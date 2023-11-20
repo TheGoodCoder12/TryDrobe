@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="This is the main page of TryDrobe">
+  <title>TryDrobe : Virtual Wardrobe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<h1 style="font-size: 100px;
+color: black;
+margin-bottom: 40px;">
+  <center><i>Try<span class="drobe">Drobe</span></i></center>
+</h1>
+<body>
+  <script src="script.js"></script>
+  
+  <nav>
+    <ul>
+      <li><a href="saved.html">Your saved outfits</a></li>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+      <li><a href="youraccountNew.html">Login/Sign Up</a></li>
+    </ul>
+
+  </nav>
+  </head>
+
+  <body>
+
+    <h1>Choose your character:</h1>
+
+    <button onclick="toggleCharacter()">Toggle Character</button>
+
+    <div id="maleCharacter" class="male">
+      <center>
+        <div class="boy item">
+          <img src="baselayer.jpg" alt="Boy base layer" style="height: 500px; width: 25%;" id="whiteimage"
+          class = "whiteimage"
+          onclick = "changeimage();"/>
+          <div style="text-align: center;">
+            <p class="para2">Choose the type of clothing: </p>
+            <select name="Type of clothing">
+                <option value="Shirt">Shirt</option>
+                <option value="Jeans">Jeans</option>
+            </select>
+        </div>
+    
+          <div class="designs">
+            <div class="item"><img src="baselayerRed.jpg" alt="" style="height: 250px; width: 100%;" id = "redimage"
+              class = "redimage"
+                  onclick="changeImage('redimage')">
+            </div>
+            <div class="item"><img src="baselayerGreen.jpg" alt="" style="height: 250px; width: 100%;" class="greenimage" id="greenimage"
+                onclick="changeImage('greenimage')"></div>
+            <div class="item"><img src="baselayerBlue.jpg" alt="" style="height: 250px; width: 100%;"
+            class="blueimage"
+            id="blueimage"
+                onclick="changeImage('blueimage')"></div>
+          </div>
+
+          <button type="submit"
+            style="height: 60px; width: 50%; font-size: 30px; margin-top: 50px; margin-bottom: 50px; border-radius: 50px; "
+            class="js-save save" onclick="
+          alter();">Save
+            this outfit!</button>
+        </div>
+      </center>
+      <!--male character here-->
+    </div>
+
+    <div id="femaleCharacter" class="female">
+      <center><img src="girl.gif" alt="Primary Interface" style="height: 500px; width: 25%;"></center>
+      <br>
+      <br>
+      <p style="color:white; font-size: 30px;">Choose the type of clothing: </p>
+      <select name="Type of clothing">
+        <option value="Top">Top</option>
+        <option value="Jeans">Jeans</option>
+      </select>
+      <br>
+      <br>
+      <img src="girlRed.gif" alt="" style="height: 250px; width: 20%;"> <img src="" alt=""> <img src="girlGreen.gif"
+        alt="" style="height: 250px; width: 20%;"> <img src="girlBlue.gif" alt="" style="height: 250px; width: 20%;">
+      <br>
+      <button type="submit"
+        style="height: 60px; width: 50%; font-size: 30px; margin-top: 50px; margin-bottom: 50px; border-radius: 50px;"
+        class="js-save save" onclick="
+        alter();">Save
+        this outfit!</button>
+      <!--Here I have made changes in the code is pa css implement karna ka liye maina ek aur class ka use kia ha 'save'
+        GO TO STYLE-->
+      <!--female character here-->
+    </div>
+
+    <script>
+      function toggleCharacter() {
+        var maleCharacter = document.getElementById('maleCharacter');
+        var femaleCharacter = document.getElementById('femaleCharacter');
+
+        if (maleCharacter.style.display === 'block') {
+          maleCharacter.style.display = 'none';
+          femaleCharacter.style.display = 'block';
+        } else {
+          maleCharacter.style.display = 'block';
+          femaleCharacter.style.display = 'none';
+        }
+      }
+
+      function alter() {
+        //Here is the function associated with the change
+        let saveButton = document.querySelector('.js-save');
+
+        saveButton.innerHTML = 'Outfit Saved!';
+        saveButton.classList.add('.saved');
+        //Now this class will be used to alter the design.
+
+      }
+      function changeImage(parameter) {
+        // Find all elements with the class "clickable-image"
+        // let images = document.querySelector('.white-image');
+        // image.src = newSrc;
+
+        // Loop through each image and set the new source
+        // images.forEach(function (image) {
+        //   image.src = newSrc;
+        // });
+       // image.innerHTML = newSrc;
+
+       let whiteimage = document.querySelector('#whiteimage');
+       let para = document.querySelector('#'+parameter);
+
+      // Get the src attribute values of the two images
+      var src1 = whiteimage.src;
+      var src2 = redimage.src;
+
+      // Swap the src attributes
+      whiteimage.src = src2;
+      redimage.src = src1;
+
+      }
+      
+    </script>
+
+  </body>
+
+
+  <!-- <h4>Select your gender</h4> 
+    <p style="text-align: center;" >
+        <input type="radio" id="Male" name="gender" value="male" style= color:whitesmoke;"> 
+    <label for="Male" style="color: whitesmoke; font-size: 20px;">Male</label> 
+    <input type="radio" id="Female" name="gender" value="female"style="color: whitesmoke;"> 
+    <label for="Female" style="color: whitesmoke; font-size: 20px;">Female</label> 
+    </p> 
+    <center><img src="girl.gif" alt="Primary Interface" style="height: 500px; width: 25%;"></center> 
+    <div style="text-align: center;"> -->
+  <!-- <br> 
+        <br> 
+        <p style="color:white; font-size: 30px;">Choose the type of clothing: </p> 
+        <select name="Type of clothing"> 
+            <option value="Top">Top</option> 
+            <option value="Jeans">Jeans</option> 
+            <option value="Ghaghra">Ghaghra</option> 
+            <option value="Frock">Frock</option> 
+            <option value="Saree">Saree</option> 
+        </select> -->
+  <!-- <br> 
+        <br> 
+        <img src="modern1.jpg" alt="" style="height: 250px; width: 20%;"> <img src="" alt=""> <img src="modern3.png" alt="" style="height: 250px; width: 20%;"> <img src="modern4.jpg" alt="" style="height: 250px; width: 20%;"> 
+        <br> 
+        <button type="submit" style="height: 60px; width: 50%; font-size: 30px; margin-top: 50px; margin-bottom: 50px;">Save this outfit!</a></button> -->
+  </div>
+
+  <!-- <p style="background-color: thistle; ">This website is created and owned by MARBLESx6.</p>
+  <p style="text-align: right; background-color: thistle; ">&copy;&nbsp;ALL RIGHTS RESERVED.</p> -->
+  <p class="rights" style="margin-top: 105px; width: 364px;">This website is created and owned by MARBLESx6</p>
+    
+    <p class="rights" style="margin-top: 8px; width: 190px;">ALL RIGHTS RESERVED</p>
+  <!-- I'm gonna use prism css -->
+</body>
+
+</html>

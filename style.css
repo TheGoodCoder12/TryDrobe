@@ -1,0 +1,213 @@
+a {
+    text-decoration: none;
+} 
+ * {
+            margin: 0;
+            padding: 0;
+            font-family: fantasy;
+        }
+        .drobe {
+            color: rgb(142, 7, 92);
+        }
+        nav {
+            margin-top: 20px;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            padding-left: 8px;
+            background-color: black;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            display: flex;
+            padding-top: 7px;
+    padding-bottom: 7px;
+        }
+
+        ul li {
+            color: white;
+            font-size: 15px;
+            list-style: none;
+            margin: 0 30px;
+            margin-left: 120px;
+        }
+        ul li a{
+            padding-top: 16px;
+    padding-bottom: 14px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    transition: background-color 0.25s, color 0.25s, opacity 0.25s;
+        }
+ul li a:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+ul li a:active{
+    opacity: 0.7;
+}
+        body {
+            background-image: url(wardrobe\ 3.jfif);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            text-align: center;
+        }
+
+        .square {
+            height: 125px;
+            width: 125px;
+            background-color: #555;
+
+            background: url(Sample.jpeg);
+            margin: 100px;
+
+        }
+        /* h1 {
+            
+        } */
+        .rights {
+            font-size: 15px;
+            font-weight: lighter;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: left;
+            color: rgba(168, 167, 167, 0.336);
+        }
+        .rights:hover {
+            color: white;
+            font-weight: bold;
+        }
+        .para1, .para2 {
+            display: inline-block;
+            margin-right: 20px;
+            color: white;
+            font-size: 20px;
+            font-weight: 530;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        
+        .para1 {
+            margin-top: 100px;
+        }
+        
+        .para2 {
+            margin-top: 80px;
+            margin-bottom: 70px;
+        }
+        
+        label {
+            color: white;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+        select {
+            background-color: white;
+            color: rgb(142, 7, 92);
+            font-size: 17px;
+            border-radius: 6px;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            padding-right: 1px;
+            padding-left: 1px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+        
+        select:focus {
+            background-color: rgb(142, 7, 92);
+            color: white;
+        }
+        
+        option {
+            background-color: white;
+            color: rgb(142, 7, 92);
+            font-size: 17px; 
+            padding-top: 2px;
+            padding-bottom: 2px;
+            padding-right: 1px;
+            padding-left: 1px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            transition: background-color 0.4s, color 0.4s;
+        }
+        img {
+            border-radius: 50px;
+        }
+
+        h2 {
+            text-align: right;
+            font-size: 40px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: aquamarine;
+            margin-right: 300px;
+        }
+
+        h4 {
+            text-align: center;
+            font-size: 28px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: whitesmoke;
+
+        }
+
+        select {
+            font-size: 25px;
+        }
+
+        #wardrobe {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .designs {
+            display: grid;
+            grid-template-rows: repeat (1, 200px);
+            grid-template-columns: repeat(3, 300px);
+            justify-content: center;
+            align-items: center;
+            padding: 250px;
+            row-gap: 15px;
+            column-gap: 70px;
+            padding: 0;
+        }
+        img{
+            display: inline-block;
+            cursor: pointer;
+            border: none;
+            padding: 0;
+            background: none;
+          }
+          .male {
+            display: block;
+          }
+      
+          .female {
+            display: none;
+          }
+      
+          .save {
+            border: none;
+            background-color: white;
+            color: black;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+            font-weight: bold;
+            border-radius: 50px;
+            cursor: pointer;
+            margin-bottom: 30px;
+          }
+      
+          .saved {
+            background-color: rgba(255, 255, 0, 0.664);
+            color: red;
+          }
+          body>h1{
+            font-size: 50px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          }
+          button{
+            font-size: 20px;
+          }
