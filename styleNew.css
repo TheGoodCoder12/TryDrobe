@@ -1,0 +1,159 @@
+a {
+    text-decoration: none;
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: fantasy;
+}
+
+.drobe {
+    color: rgb(142, 7, 92);
+}
+
+nav {
+    margin-top: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 8px;
+    background-color: black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+ul {
+    display: flex;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+ul li {
+    color: white;
+    font-size: 17px;
+    list-style: none;
+    margin: 0 30px;
+    margin-left: 120px;
+}
+
+ul li a {
+    padding-top: 16px;
+    padding-bottom: 14px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    transition: background-color 0.25s, color 0.25s, opacity 0.25s;
+}
+
+ul li a:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+ul li a:active {
+    opacity: 0.7;
+}
+
+body {
+    background-image: url(wardrobe-pictures/wardrobe\ 3.jfif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+
+h1 {
+    font-size: 100px;
+    color: black;
+    margin-bottom: 40px;
+}
+
+.proceed {
+    margin-left: 750px;
+    border-style: solid;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-color: rgb(142, 7, 92);
+    border-width: 2px;
+    color: rgb(142, 7, 92);
+    padding: 15px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.4s, color 0.4s;
+}
+
+.proceed:hover {
+    background-color: rgb(142, 7, 92);
+    color: white;
+}
+
+.proceed:active {
+    opacity: 0.8;
+}
+
+.rights {
+    font-size: 15px;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    color: rgba(168, 167, 167, 0.336);
+}
+
+.rights:hover {
+    color: white;
+    font-weight: bold;
+}
+
+.para1, .para2 {
+    display: inline-block;
+    margin-right: 20px;
+    color: white;
+    font-size: 20px;
+    font-weight: 530;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.para1 {
+    margin-top: 100px;
+}
+
+.para2 {
+    margin-top: 80px;
+    margin-bottom: 70px;
+}
+
+label {
+    color: white;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+select {
+    background-color: white;
+    color: rgb(142, 7, 92);
+    font-size: 17px;
+    border-radius: 6px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 1px;
+    padding-left: 1px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+select:focus {
+    background-color: rgb(142, 7, 92);
+    color: white;
+}
+
+option {
+    background-color: white;
+    color: rgb(142, 7, 92);
+    font-size: 17px; 
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 1px;
+    padding-left: 1px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    transition: background-color 0.4s, color 0.4s;
+}

@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.logo img{
+    width: 93px;
+    height: 35px;
+    cursor: pointer;
+    scale: 0.85;
+}
+ul{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 0 22px;
+}
+.right ul{
+    display: flex;
+    gap: 25px;
+    justify-content: right;
+    align-items: center;
+}
+.right ul li{
+    list-style: none;
+    font-size: 9px;
+}
+.right ul li img{
+    height: 6px;
+    width: 6px;
+}
+header{
+    margin-top: 8px;
+}
+nav{
+    display: flex;
+}
