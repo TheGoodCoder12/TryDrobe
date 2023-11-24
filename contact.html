@@ -4,43 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Adding the website description -->
     <meta name="description" content="This page shows the ways in which you can contact us.">
     <title>Contact Us - TryDrobe</title>
+    <!-- Linkng the stylesheet -->
     <link rel="stylesheet" href="contact.css">
 </head>
 
 <body>
 
     <h1>Contact Us</h1>
-    <form action= " /submit_form" method="post">
-    <div>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-    </div>
-    <div>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-    </div>
-    <div>
-        <label for="message">What can we help you with?:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-    </div>
-    <div class="submitButton"><button type="submit"><a href="contactReply.html">Sumbit</a></button></div>
-    
-    </form>
-    <div class="footer"><div>
-        <h2>Office Address: </h2>
-        <p>Swami Vivekananda Boys Hostel,</p>
-        <p>Motilal Nehru National Institute of Technology,</p>
-        <p>Prayagraj-211004, Uttar Pradesh, India</p>
-    </div>
-    <div class="Contact">
-        <h2>Contact Details: </h2>
-        <p>+91 1234567890,</p>
-        <p>+91 1234098765,</p>
-        <P>+91 1234543210</P>
-    </div></div>
-    
+    <!-- Contact form -->
+    <form action=" /submit_form" method="post">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="message">What can we help you with?:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <div class="submitButton"><button type="submit"><a href="contactReply.html">Sumbit</a></button></div>
 
+    </form>
+    <!-- Adding the footer containing Adddress and contact no -->
+    <div class="footer">
+        <div>
+            <h2>Office Address: </h2>
+            <p>Swami Vivekananda Boys Hostel,</p>
+            <p>Motilal Nehru National Institute of Technology,</p>
+            <p>Prayagraj-211004, Uttar Pradesh, India</p>
+        </div>
+        <div class="Contact">
+            <h2>Contact Details: </h2>
+            <p>+91 1234567890,</p>
+            <p>+91 1234098765,</p>
+            <P>+91 1234543210</P>
+        </div>
+    </div>
 
 </html>
